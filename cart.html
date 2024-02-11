@@ -1,0 +1,15 @@
+<script>function shtoNeShporte(emriProduktit, cmimiProduktit) {
+    var artikull = {
+        emri: emriProduktit,
+        cmimi: cmimiProduktit
+    };
+
+    var listaArtikujve = document.getElementById("lista-artikujve");
+    var artikullHTML = "<li>" + artikull.emri + " - $" + artikull.cmimi + "</li>";
+    listaArtikujve.innerHTML += artikullHTML;
+}
+
+function rineShporten() {
+    document.getElementById("lista-artikujve").innerHTML = "";
+}
+</script>
